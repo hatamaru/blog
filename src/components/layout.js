@@ -11,7 +11,9 @@ class Layout extends React.Component {
     const headerLink = (
       <Link
         style={{
-          boxShadow: `none`,
+          // fontFamily: `Montserrat, sans-serif`,
+
+          // boxShadow: `none`,
           textDecoration: `none`,
           color: `inherit`,
         }}
@@ -34,7 +36,6 @@ class Layout extends React.Component {
       ) : (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
           }}
         >
