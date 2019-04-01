@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import Twitter from "../components/twitter"
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -41,6 +43,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <Twitter />
       </Layout>
     )
   }
