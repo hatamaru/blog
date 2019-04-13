@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const Article = styled.div`
+  background-color: white;
+  padding: 8px;
   grid-row: span 4;
   :nth-child(even) {
     grid-column: 3 / span 4;
@@ -61,6 +63,6 @@ const Article = styled.div`
 `
 
 export default props => {
-  const { chirdren } = props
-  return <Article {...props}>{chirdren}</Article>
+  const { children } = props
+  return <Article {...props}>{children}</Article>
 }

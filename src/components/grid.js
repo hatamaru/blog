@@ -9,14 +9,14 @@ import styled from "styled-components"
 //   // 960 - pc
 // }
 
-const GridWrap = styled.div`
-  margin: 16px 24px;
+const MainWrap = styled.div`
+  padding: 24px 24px;
   @media (max-width: 600px) {
-    margin: 16px 0px;
+    padding: 16px 0px;
   }
 `
 
-const Grid = styled.div`
+export const Grid = styled.div`
   display: grid;
   grid: auto-flow 64px / repeat(12, 1fr);
   margin: 0 auto;
@@ -32,7 +32,7 @@ const Grid = styled.div`
 `
 
 export default ({ children }) => (
-  <GridWrap>
+  <MainWrap>
     <Grid>{children}</Grid>
-  </GridWrap>
+  </MainWrap>
 )
