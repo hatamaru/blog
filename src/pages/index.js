@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
 
-        <Grid>
+        <Grid style={{ backgroundColor: "#F2F2F2" }}>
           {posts.map(({ node }, index) => {
             return <Article key={node.fields.slug} node={node} index={index} />
           })}

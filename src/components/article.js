@@ -104,7 +104,6 @@ const Title = styled.h3`
   height: 46px;
   margin-top: ${rhythm(1 / 8)};
   margin-bottom: ${rhythm(1 / 8)};
-  text-overflow: ellipsis;
   overflow: hidden;
 `
 

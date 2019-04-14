@@ -31,8 +31,8 @@ export const Grid = styled.div`
   }
 `
 
-export default ({ children }) => (
-  <MainWrap>
+export default ({ children, style }) => (
+  <MainWrap style={style}>
     <Grid>{children}</Grid>
   </MainWrap>
 )

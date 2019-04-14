@@ -10,7 +10,7 @@ class Layout extends React.Component {
     return (
       <>
         <Header title={title} />
-        <main style={{ backgroundColor: "#F2F2F2" }}>{children}</main>
+        <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
