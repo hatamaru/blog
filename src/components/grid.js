@@ -12,7 +12,7 @@ import styled from "styled-components"
 const MainWrap = styled.div`
   padding: 24px 24px;
   @media (max-width: 600px) {
-    padding: 16px 0px;
+    padding: 16px 8px;
   }
 `
 

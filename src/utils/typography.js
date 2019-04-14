@@ -3,7 +3,7 @@ import Github from "typography-theme-github"
 
 const typography = new Typography({
   ...Github,
-  baseFontSize: "17px",
+  // baseFontSize: "17 px",
 })
 
 // Hot reload typography in development.
