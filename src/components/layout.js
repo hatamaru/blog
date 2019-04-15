@@ -1,7 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
-
-// import { rhythm, scale } from "../utils/typography"
 import Header from "../components/header"
 import Footer from "../components/footer"
 class Layout extends React.Component {
@@ -10,7 +7,9 @@ class Layout extends React.Component {
     return (
       <>
         <Header title={title} />
+        <hr style={{ width: "100%", marginBottom: 0 }} />
         <main>{children}</main>
+        <hr style={{ width: "100%", marginBottom: 0 }} />
         <Footer />
       </>
     )

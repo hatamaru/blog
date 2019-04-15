@@ -155,7 +155,7 @@ export default props => {
       <TextWrap hover={hover} index={index}>
         <div style={{ display: "flex" }}>
           {tags.map(tag => (
-            <Tag>{tag}</Tag>
+            <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
         <Title index={index}>{title}</Title>

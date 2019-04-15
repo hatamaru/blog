@@ -4,13 +4,18 @@ import { Link } from "gatsby"
 import { Grid } from "./grid"
 
 const Title = styled(Link)`
+  :hover {
+    text-decoration: none;
+  }
+  font-weight: bold;
+  font-size: 1.4rem;
   align-self: center;
-  grid-column: 3 / span 2;
+  grid-column: 3 / span 3;
   @media (max-width: 960px) {
-    grid-column: 1 / span 2;
+    grid-column: span 3;
   }
   @media (max-width: 600px) {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 `
 

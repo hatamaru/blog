@@ -3,24 +3,22 @@ import { Grid } from "./grid"
 import Twitter from "./twitter"
 import styled from "styled-components"
 
-const FooterWrap = styled.footer`
+const FooterWrap = styled.div`
   width: 100%;
-  padding: 24px 24px 0;
+  padding: 24px 24px;
   @media (max-width: 600px) {
     padding: 0 8px;
   }
 `
 
-const CopyWriteArea = styled.div`
-  align-self: center;
-  text-align: center;
-  grid-row: span 1;
-  grid-column: 3 / span 8;
+const CopyRightsArea = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  height: 64px;
   @media (max-width: 960px) {
-    grid-column: 1 / span 8;
-  }
-  @media (max-width: 600px) {
-    grid-column: 1 / span 4;
+    height: 56px;
   }
 `
 const About = styled.div`
@@ -48,25 +46,37 @@ const FooterLink = styled.a`
 
 export default () => {
   return (
-    <FooterWrap>
-      <Grid style={{ gridAutoFlow: "column" }}>
-        <About>
-          <FooterTitle>About</FooterTitle>
-          <FooterLink href="https://www.youtube.com/channel/UCL7Xcbd0r2NadKR-wYhXPsw/featured?view_as=subscriber">
-            YouTube Channel
-          </FooterLink>
-        </About>
-        <About>
-          <FooterTitle>Portfolio</FooterTitle>
-        </About>
-        <Twitter />
+    <footer>
+      <FooterWrap>
+        <Grid style={{ gridAutoFlow: "column" }}>
+          <About>
+            <FooterTitle>About</FooterTitle>
+            <div>
+              YouTubeを中心にWebサービス開発未経験者・初心者向けの情報を発信します。
+              フリーランスエンジニアとして活動しています。
+            </div>
+            <FooterLink href="https://www.youtube.com/channel/UCL7Xcbd0r2NadKR-wYhXPsw/featured?view_as=subscriber">
+              > YouTube
+            </FooterLink>
+            <br />
+            <FooterLink href="https://github.com/hatamaru">> Github</FooterLink>
+            <br />
+            <FooterLink href="#">
+              > お仕事の依頼はこちら(現在ページ製作中)
+            </FooterLink>
+          </About>
+          <About>
+            <FooterTitle>Portfolio</FooterTitle>
+            <div>作ったサービスをここに掲載していきます</div>
+          </About>
+          <Twitter />
+        </Grid>
+      </FooterWrap>
 
-        <CopyWriteArea>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </CopyWriteArea>
-      </Grid>
-    </FooterWrap>
+      <hr style={{ width: "100vw", margin: 0 }} />
+      <CopyRightsArea>
+        © {new Date().getFullYear()}, Hatamaru All Rights Reserved.
+      </CopyRightsArea>
+    </footer>
   )
 }
