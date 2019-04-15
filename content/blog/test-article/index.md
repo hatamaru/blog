@@ -1,10 +1,15 @@
 ---
 title: テスト記事
 date: "2019-03-31T15:01:25Z"
+thumbnail: "./salty_egg.jpg"
+tags: ["React", "Gatsby"]
+
 ---
 
 テスト記事を書いています。
 `code`が入ります
+
+<iframe src="https://www.youtube.com/embed/Woz8yxojcO8" width=16 height=9></iframe>
 
 # 見出し 1
 

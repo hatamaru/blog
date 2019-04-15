@@ -1,6 +1,9 @@
 ---
-title: My Second Post!
+title: My Second Post! でいろんなことすしてみたふぇじゃをいjふぁ
 date: "2015-05-06T23:46:37.121Z"
+thumbnail: "./salty_egg.jpg"
+tags: ["React", "Gatsby"]
+
 ---
 
 Wow! I love blogging so much already.
