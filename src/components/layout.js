@@ -3,7 +3,7 @@ import React from "react"
 
 // import { rhythm, scale } from "../utils/typography"
 import Header from "../components/header"
-
+import Footer from "../components/footer"
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props
@@ -11,11 +11,7 @@ class Layout extends React.Component {
       <>
         <Header title={title} />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </>
     )
   }

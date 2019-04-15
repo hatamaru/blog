@@ -4,6 +4,13 @@ import Github from "typography-theme-github"
 const typography = new Typography({
   ...Github,
   // baseFontSize: "17 px",
+  overrideStyles: _ref => ({
+    ...Github.overrideStyles(_ref),
+    a: {
+      color: "#009EAC",
+      textDecoration: "none",
+    },
+  }),
 })
 
 // Hot reload typography in development.

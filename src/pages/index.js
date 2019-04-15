@@ -7,8 +7,6 @@ import SEO from "../components/seo"
 import Grid from "../components/grid"
 import Article from "../components/article"
 
-import Twitter from "../components/twitter"
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -21,13 +19,11 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-
         <Grid style={{ backgroundColor: "#F2F2F2" }}>
           {posts.map(({ node }, index) => {
             return <Article key={node.fields.slug} node={node} index={index} />
           })}
         </Grid>
-        <Twitter />
       </Layout>
     )
   }

@@ -85,9 +85,9 @@ const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
-  padding-top: ${props => props.index === 0 && "70px"};
+  padding: ${props => props.index === 0 && `${rhythm(2)} ${rhythm(1)}`};
   @media (max-width: 600px) {
-    padding-top: 8px;
+    padding: 8px;
   }
   width: ${props =>
     props.index === 0 ? (props.hover ? "120%" : "100%") : "100%"};
@@ -113,7 +113,7 @@ const Date = styled.small`
 
 const Description = styled.p`
   display: ${props => (props.hover || props.index === 0 ? "inline" : "none")};
-  font-size: 0.8rem;
+  font-size: 0.785rem;
   color: #c3ced2;
   padding-top: ${rhythm(1 / 4)};
   padding-top: ${props => props.index === 0 && rhythm(3 / 2)};
@@ -124,7 +124,6 @@ const Description = styled.p`
 
 export default props => {
   const [hover, setHover] = useState(false)
-
   const { node } = props
   const handleClick = () => {
     navigate(node.fields.slug)
@@ -165,11 +164,6 @@ export default props => {
           {node.frontmatter.description || node.excerpt}
         </Description>
       </TextWrap>
-      {/* <p
-        dangerouslySetInnerHTML={{
-          __html: node.frontmatter.description || node.excerpt,
-        }}
-      /> */}
     </Article>
   )
 }
