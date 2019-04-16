@@ -5,9 +5,9 @@ import styled from "styled-components"
 
 const FooterWrap = styled.div`
   width: 100%;
-  padding: 24px 24px;
+  padding: 24px;
   @media (max-width: 600px) {
-    padding: 0 8px;
+    padding: 8px;
   }
 `
 
@@ -24,7 +24,7 @@ const CopyRightsArea = styled.div`
 const About = styled.div`
   border: 1px solid #c3ced2;
   padding: 8px;
-  grid-row: span 3;
+  grid-row: span 4;
   grid-column: 3 / span 4;
   @media (max-width: 960px) {
     grid-column: 1 / span 4;

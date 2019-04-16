@@ -5,7 +5,7 @@ import styled from "styled-components"
 const TweetWrap = styled.div`
   border: 1px solid #c3ced2;
   padding: 8px;
-  grid-row: span 6;
+  grid-row: span 8;
   grid-column: 7 / span 4;
   @media (max-width: 960px) {
     grid-column: 5 / span 4;
