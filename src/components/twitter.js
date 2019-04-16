@@ -21,24 +21,30 @@ const FooterTitle = styled.h3`
   font-weight: bold;
 `
 
-export default () => {
-  return (
-    <TweetWrap>
-      <FooterTitle>Twitter</FooterTitle>
-      <a
-        className="twitter-timeline"
-        href="https://twitter.com/hatamaru_code?ref_src=twsrc%5Etfw"
-        data-chrome="noheader"
-      >
-        {/* Tweets by hatamaru_code */}
-      </a>
-      <Helmet>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        />
-      </Helmet>
-    </TweetWrap>
-  )
+export default class Twitter extends React.Component {
+  componentDidMount() {
+    window.twttr && window.twttr.widgets && window.twttr.widgets.load()
+  }
+
+  render() {
+    return (
+      <TweetWrap>
+        <FooterTitle>Twitter</FooterTitle>
+        <a
+          className="twitter-timeline"
+          href="https://twitter.com/hatamaru_code?ref_src=twsrc%5Etfw"
+          data-chrome="noheader"
+        >
+          {/* Tweets by hatamaru_code */}
+        </a>
+        <Helmet>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          />
+        </Helmet>
+      </TweetWrap>
+    )
+  }
 }
