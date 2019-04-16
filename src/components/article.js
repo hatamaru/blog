@@ -50,21 +50,25 @@ const Article = styled.div`
     }
   }
   @media (max-width: 600px) {
+    grid-row: span 5;
+    grid-column: span 4;
+
     :nth-child(even) {
-      grid-column: span 5;
+      grid-column: span 4;
     }
     :nth-child(odd) {
-      grid-column: span 5;
+      grid-column: span 4;
     }
     :nth-child(1) {
-      grid-row: span 6;
+      grid-row: span 7;
       flex-direction: column;
+      grid-column: span 4;
     }
     :nth-child(2) {
-      grid-row: span 4;
+      grid-column: span 4;
     }
     :nth-child(3) {
-      grid-row: span 4;
+      grid-column: span 4;
     }
   }
 `
