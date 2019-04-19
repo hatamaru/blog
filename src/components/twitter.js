@@ -34,6 +34,7 @@ export default class Twitter extends React.Component {
           className="twitter-timeline"
           href="https://twitter.com/hatamaru_code?ref_src=twsrc%5Etfw"
           data-chrome="noheader"
+          height="550px"
         >
           {/* Tweets by hatamaru_code */}
         </a>
